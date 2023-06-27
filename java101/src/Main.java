@@ -31,7 +31,7 @@ public class Main {
         double sonuc = toplam / 6.0;
         System.out.println("Ortalamanız : " + sonuc);
 
-        String a="Sınıfı geçti";
+        String a = "Sınıfı geçti";
         String b = "Sınıfta Kaldı";
         String bas;
         bas = (sonuc > 60) ? a : b;
@@ -46,6 +46,17 @@ public class Main {
         System.out.println("Kdvsiz tutar : " + tutar);
         System.out.println("Kdv değeri : " + kdv.KdvDegeri(tutar));
         System.out.println("Kdvli toplam tutar : " + kdv.KdvliTutar(tutar));
+
+        UcgenHipotenus ucgenHipotenus = new UcgenHipotenus();
+        int aKenari, bKenari;
+        double c;
+        Scanner ucgen = new Scanner(System.in);
+        System.out.println("1. kenarı giriniz: ");
+        aKenari = ucgen.nextInt();
+        System.out.println("2. kenarı giriniz: ");
+        bKenari = ucgen.nextInt();
+        System.out.println("Üçgenin hipotenüsü: " + ucgenHipotenus.hipotenus(aKenari,bKenari));
+
 
     }
 }

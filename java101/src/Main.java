@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
         /*
         //Değişkenleri oluştur
         int mat,fizik,kimya,turkce,tarih,muzik;
@@ -67,7 +70,7 @@ public class Main {
 
         Taksimetre taksimetre = new Taksimetre();
         System.out.println("Toplam tutar: " + taksimetre.kmHesapla(km));
- */
+
         Scanner yaricapInput = new Scanner(System.in);
         System.out.println("Yarıçapı giriniz: ");
         int yaricap = yaricapInput.nextInt();
@@ -75,6 +78,32 @@ public class Main {
         DaireAlanVeCevre daireAlanVeCevre = new DaireAlanVeCevre();
         System.out.println("Dairenin alanı: " + daireAlanVeCevre.DaireAlanHesapla(yaricap));
         System.out.println("Dairen çevresi: " + daireAlanVeCevre.DaireCevreHesapla(yaricap));
+
+
+        System.out.println("Kilonu (kg) giriniz: ");
+        int kilo = input.nextInt();
+        System.out.println("Boyunuzu giriniz: ");
+        double boy = input.nextDouble();
+
+        VucutKitleEndeksi vucutKitleEndeksi = new VucutKitleEndeksi();
+        System.out.println("Vücut Kitle Endesiniz: " + vucutKitleEndeksi.kitleEndeksiHesapla(kilo,boy));
+
+         */
+
+        System.out.println("Armut kaç kilo: " );
+        int armutKilo = input.nextInt();
+        System.out.println("Elma kaç kilo: " );
+        int elmaKilo = input.nextInt();
+        System.out.println("Domates kaç kilo: " );
+        int domatesKilo = input.nextInt();
+        System.out.println("Muz kaç kilo: " );
+        int muzKilo = input.nextInt();
+        System.out.println("Patlıcan kaç kilo: " );
+        int patlicanKilo = input.nextInt();
+
+        ManavKasaProgram manavKasaProgram = new ManavKasaProgram();
+        System.out.println("Toplam tutar: " + manavKasaProgram.ToplamHesapla(armutKilo,elmaKilo,domatesKilo,muzKilo,patlicanKilo));
+
 
     }
 }

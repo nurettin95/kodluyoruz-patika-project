@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       //Değişkenleri oluştur
+        /*
+        //Değişkenleri oluştur
         int mat,fizik,kimya,turkce,tarih,muzik;
         double tutar;
 
@@ -56,6 +57,16 @@ public class Main {
         System.out.println("2. kenarı giriniz: ");
         bKenari = ucgen.nextInt();
         System.out.println("Üçgenin hipotenüsü: " + ucgenHipotenus.hipotenus(aKenari,bKenari));
+
+        */
+
+        int km;
+        Scanner kmInput = new Scanner(System.in);
+        System.out.println("Mesafeyi KM cinsinden giriniz: ");
+        km = kmInput.nextInt();
+
+        Taksimetre taksimetre = new Taksimetre();
+        System.out.println("Toplam tutar: " + taksimetre.kmHesapla(km));
 
 
     }

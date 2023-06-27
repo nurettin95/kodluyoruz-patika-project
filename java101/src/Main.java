@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
        //Değişkenleri oluştur
         int mat,fizik,kimya,turkce,tarih,muzik;
+        double tutar;
 
         Scanner inp = new Scanner(System.in);
 
@@ -36,6 +37,15 @@ public class Main {
         bas = (sonuc > 60) ? a : b;
 
         System.out.println(bas);
+
+        System.out.println("Para değerini giriniz");
+        Scanner money = new Scanner(System.in);
+        tutar = money.nextDouble();
+
+        Kdv kdv = new Kdv();
+        System.out.println("Kdvsiz tutar : " + tutar);
+        System.out.println("Kdv değeri : " + kdv.KdvDegeri(tutar));
+        System.out.println("Kdvli toplam tutar : " + kdv.KdvliTutar(tutar));
 
     }
 }

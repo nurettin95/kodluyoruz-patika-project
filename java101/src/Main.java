@@ -58,7 +58,7 @@ public class Main {
         bKenari = ucgen.nextInt();
         System.out.println("Üçgenin hipotenüsü: " + ucgenHipotenus.hipotenus(aKenari,bKenari));
 
-        */
+
 
         int km;
         Scanner kmInput = new Scanner(System.in);
@@ -67,7 +67,14 @@ public class Main {
 
         Taksimetre taksimetre = new Taksimetre();
         System.out.println("Toplam tutar: " + taksimetre.kmHesapla(km));
+ */
+        Scanner yaricapInput = new Scanner(System.in);
+        System.out.println("Yarıçapı giriniz: ");
+        int yaricap = yaricapInput.nextInt();
 
+        DaireAlanVeCevre daireAlanVeCevre = new DaireAlanVeCevre();
+        System.out.println("Dairenin alanı: " + daireAlanVeCevre.DaireAlanHesapla(yaricap));
+        System.out.println("Dairen çevresi: " + daireAlanVeCevre.DaireCevreHesapla(yaricap));
 
     }
 }

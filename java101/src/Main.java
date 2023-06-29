@@ -142,8 +142,27 @@ public class Main {
         CinZodyagi cinZodyagi = new CinZodyagi();
         cinZodyagi.CinZodyagi();
 
-         */
         ArtikYil artikYil = new ArtikYil();
         artikYil.ArtikYil();
+
+        AverageCalculator averageCalculator = new AverageCalculator();
+        averageCalculator.AverageCalculator();
+
+        SumCalculator sumCalculator = new SumCalculator();
+        sumCalculator.SumCalculator();
+
+        PowerCalculator powerCalculator = new PowerCalculator();
+        powerCalculator.PowerCalculator();
+
+        CombinationCalculator combinationCalculator = new CombinationCalculator();
+        combinationCalculator.CombinationCalculator();
+
+        UsluSayilar usluSayilar = new UsluSayilar();
+        usluSayilar.usluSayilar();
+
+        DigitSumCalculator digitSumCalculator = new DigitSumCalculator();
+        digitSumCalculator.DigitSumCalculator();
+        */
+
     }
 }

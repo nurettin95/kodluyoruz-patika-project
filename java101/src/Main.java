@@ -178,8 +178,11 @@ public class Main {
         MukemmelSayi mukemmelSayi = new MukemmelSayi();
         mukemmelSayi.MukemmelSayi();
 
-         */
         TersUcgen tersUcgen = new TersUcgen();
         tersUcgen.tersUcgen();
+
+         */
+        Fibonacci fibonacci = new Fibonacci();
+        fibonacci.Fibonacci();
     }
 }

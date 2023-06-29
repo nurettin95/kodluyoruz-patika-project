@@ -136,8 +136,14 @@ public class Main {
         BurcBulma burcBulma = new BurcBulma();
         burcBulma.BurcBulma();
 
-        */
         UcakBiletiFiyatHesaplama ucakBiletiFiyatHesaplama = new UcakBiletiFiyatHesaplama();
         ucakBiletiFiyatHesaplama.ucakBiletiFiyatHesaplama();
+
+        CinZodyagi cinZodyagi = new CinZodyagi();
+        cinZodyagi.CinZodyagi();
+
+         */
+        ArtikYil artikYil = new ArtikYil();
+        artikYil.ArtikYil();
     }
 }

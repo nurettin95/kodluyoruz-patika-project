@@ -97,7 +97,7 @@ public class Main {
         ManavKasaProgram manavKasaProgram = new ManavKasaProgram();
         System.out.println("Toplam tutar: " + manavKasaProgram.ToplamHesapla(armutKilo,elmaKilo,domatesKilo,muzKilo,patlicanKilo));
 
-        */
+
         int n1, n2, select;
 
         System.out.println("İlk sayıyı giriniz : ");
@@ -112,6 +112,20 @@ public class Main {
 
         HesapMakinesi hesapMakinesi = new HesapMakinesi();
         System.out.println("Sonuç : " + hesapMakinesi.Hesapla(n1, n2, select));
+
+         */
+
+        String userName, password;
+
+        System.out.println("Kullanıcı Adınız: ");
+        userName = input.nextLine();
+
+        System.out.println("Şifreniz: ");
+        password = input.nextLine();
+
+        KullaniciGirisi kullaniciGirisi = new KullaniciGirisi();
+        kullaniciGirisi.SifreKontrol(userName,password);
+
 
     }
 }

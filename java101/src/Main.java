@@ -175,8 +175,11 @@ public class Main {
         EnBuyukEnKucukSayiBulma enBuyukEnKucukSayiBulma = new EnBuyukEnKucukSayiBulma();
         enBuyukEnKucukSayiBulma.EnBuyukEnKucukSayiBulma();
 
-         */
         MukemmelSayi mukemmelSayi = new MukemmelSayi();
         mukemmelSayi.MukemmelSayi();
+
+         */
+        TersUcgen tersUcgen = new TersUcgen();
+        tersUcgen.tersUcgen();
     }
 }

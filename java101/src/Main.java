@@ -169,8 +169,12 @@ public class Main {
         DiamondPattern diamondPattern = new DiamondPattern();
         diamondPattern.DiamondPattern();
 
-         */
         EbobEkok ebobEkok = new EbobEkok();
         ebobEkok.ebobEkok();
+        
+         */
+
+        EnBuyukEnKucukSayiBulma enBuyukEnKucukSayiBulma = new EnBuyukEnKucukSayiBulma();
+        enBuyukEnKucukSayiBulma.EnBuyukEnKucukSayiBulma();
     }
 }

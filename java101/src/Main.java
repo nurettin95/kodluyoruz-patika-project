@@ -124,13 +124,18 @@ public class Main {
         KullaniciGirisi kullaniciGirisi = new KullaniciGirisi();
         kullaniciGirisi.SifreKontrol(userName,password);
 
-
         SinifGecmeDurumu sinifGecmeDurumu = new SinifGecmeDurumu();
         sinifGecmeDurumu.SinifGecmeDurumu();
 
-         */
-
         EtkinlikOnerme etkinlikOnerme = new EtkinlikOnerme();
         etkinlikOnerme.EtlinlikOnerme();
+
+        SayiSiralama sayiSiralama = new SayiSiralama();
+        sayiSiralama.SayiSiralama();
+
+        BurcBulma burcBulma = new BurcBulma();
+        burcBulma.BurcBulma();
+
+        */
     }
 }

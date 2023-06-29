@@ -113,8 +113,6 @@ public class Main {
         HesapMakinesi hesapMakinesi = new HesapMakinesi();
         System.out.println("Sonuç : " + hesapMakinesi.Hesapla(n1, n2, select));
 
-         */
-
         String userName, password;
 
         System.out.println("Kullanıcı Adınız: ");
@@ -126,6 +124,8 @@ public class Main {
         KullaniciGirisi kullaniciGirisi = new KullaniciGirisi();
         kullaniciGirisi.SifreKontrol(userName,password);
 
-
+         */
+            SinifGecmeDurumu sinifGecmeDurumu = new SinifGecmeDurumu();
+            sinifGecmeDurumu.SinifGecmeDurumu();
     }
 }

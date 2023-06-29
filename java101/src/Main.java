@@ -137,5 +137,7 @@ public class Main {
         burcBulma.BurcBulma();
 
         */
+        UcakBiletiFiyatHesaplama ucakBiletiFiyatHesaplama = new UcakBiletiFiyatHesaplama();
+        ucakBiletiFiyatHesaplama.ucakBiletiFiyatHesaplama();
     }
 }

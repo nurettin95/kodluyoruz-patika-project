@@ -171,10 +171,12 @@ public class Main {
 
         EbobEkok ebobEkok = new EbobEkok();
         ebobEkok.ebobEkok();
-        
-         */
 
         EnBuyukEnKucukSayiBulma enBuyukEnKucukSayiBulma = new EnBuyukEnKucukSayiBulma();
         enBuyukEnKucukSayiBulma.EnBuyukEnKucukSayiBulma();
+
+         */
+        MukemmelSayi mukemmelSayi = new MukemmelSayi();
+        mukemmelSayi.MukemmelSayi();
     }
 }

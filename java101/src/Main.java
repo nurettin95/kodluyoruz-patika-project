@@ -35,12 +35,7 @@ public class Main {
         double sonuc = toplam / 6.0;
         System.out.println("Ortalamanız : " + sonuc);
 
-        String a = "Sınıfı geçti";
-        String b = "Sınıfta Kaldı";
-        String bas;
-        bas = (sonuc > 60) ? a : b;
-
-        System.out.println(bas);
+        System.out.println(sonuc > 60 ? "Sınıfı geçti : b" : "Sınıfta Kaldı");
 
         System.out.println("Para değerini giriniz");
         Scanner money = new Scanner(System.in);
@@ -88,8 +83,6 @@ public class Main {
         VucutKitleEndeksi vucutKitleEndeksi = new VucutKitleEndeksi();
         System.out.println("Vücut Kitle Endesiniz: " + vucutKitleEndeksi.kitleEndeksiHesapla(kilo,boy));
 
-         */
-
         System.out.println("Armut kaç kilo: " );
         int armutKilo = input.nextInt();
         System.out.println("Elma kaç kilo: " );
@@ -104,6 +97,21 @@ public class Main {
         ManavKasaProgram manavKasaProgram = new ManavKasaProgram();
         System.out.println("Toplam tutar: " + manavKasaProgram.ToplamHesapla(armutKilo,elmaKilo,domatesKilo,muzKilo,patlicanKilo));
 
+        */
+        int n1, n2, select;
+
+        System.out.println("İlk sayıyı giriniz : ");
+        n1 = input.nextInt();
+
+        System.out.println("İkinci sayıyı giriniz : ");
+        n2 = input.nextInt();
+
+        System.out.println("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme");
+        System.out.println("Seçiminiz : ");
+        select = input.nextInt();
+
+        HesapMakinesi hesapMakinesi = new HesapMakinesi();
+        System.out.println("Sonuç : " + hesapMakinesi.Hesapla(n1, n2, select));
 
     }
 }

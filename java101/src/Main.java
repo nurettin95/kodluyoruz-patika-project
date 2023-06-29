@@ -162,7 +162,15 @@ public class Main {
 
         DigitSumCalculator digitSumCalculator = new DigitSumCalculator();
         digitSumCalculator.DigitSumCalculator();
-        */
 
+        HarmonicSeries harmonicSeries = new HarmonicSeries();
+        harmonicSeries.HarmonicSeries();
+
+        DiamondPattern diamondPattern = new DiamondPattern();
+        diamondPattern.DiamondPattern();
+
+         */
+        EbobEkok ebobEkok = new EbobEkok();
+        ebobEkok.ebobEkok();
     }
 }

@@ -1,3 +1,4 @@
+import Hafta2.HesapMakinesi;
 import Hafta2.RecursiveFibonacci;
 import java.util.Scanner;
 
@@ -188,9 +189,12 @@ public class Main {
         PalindromSayi palindromSayi = new PalindromSayi();
         palindromSayi.isPalindrom(101);
 
-         */
         RecursiveFibonacci recursiveFibonacci = new RecursiveFibonacci();
         recursiveFibonacci.fib(5);
+         */
+
+        HesapMakinesi hesapMakinesi = new HesapMakinesi();
+        hesapMakinesi.HesapMakinesi();
 
     }
 }

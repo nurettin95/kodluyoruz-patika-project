@@ -1,3 +1,5 @@
+import Hafta2.Fighter.Fighter;
+import Hafta2.Fighter.Match;
 import Hafta2.OgrenciNotSistemi.Course;
 import Hafta2.OgrenciNotSistemi.Student;
 import Hafta2.OgrenciNotSistemi.Teacher;
@@ -193,7 +195,6 @@ public class Main {
         HesapMakinesi hesapMakinesi = new HesapMakinesi();
         hesapMakinesi.HesapMakinesi();
 
-         */
 
         Teacher t1 = new Teacher("Mahmut Hoca", "TRH","900");
         Teacher t2 = new Teacher("Graham Bell", "FZK", "000");
@@ -215,5 +216,13 @@ public class Main {
         Student s2 = new Student("Düdük Necmi", "444", "4", tarih, fizik, biyo);
         s2.addBulkExamNote(50,30,70);
         s2.isPass();
+
+         */
+
+        Fighter f1 = new Fighter("A",10,120,100,30);
+        Fighter f2 = new Fighter("B",20, 85,85,40);
+
+        Match match = new Match(f1,f2,85,100);
+        match.run();
     }
 }

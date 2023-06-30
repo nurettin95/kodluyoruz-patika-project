@@ -1,3 +1,4 @@
+import Hafta2.Employee.Employee;
 import Hafta2.Fighter.Fighter;
 import Hafta2.Fighter.Match;
 import Hafta2.OgrenciNotSistemi.Course;
@@ -217,12 +218,14 @@ public class Main {
         s2.addBulkExamNote(50,30,70);
         s2.isPass();
 
-         */
-
         Fighter f1 = new Fighter("A",10,120,100,30);
         Fighter f2 = new Fighter("B",20, 85,85,40);
 
         Match match = new Match(f1,f2,85,100);
         match.run();
+
+         */
+        Employee employee1 = new Employee("Nurettin",2000,45,1985);
+        employee1.toStringEmpoloyee();
     }
 }

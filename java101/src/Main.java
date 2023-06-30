@@ -1,3 +1,5 @@
+import Hafta2.DiziOdevler;
+import Hafta2.DiziPratikler;
 import Hafta2.Employee.Employee;
 import Hafta2.Fighter.Fighter;
 import Hafta2.Fighter.Match;
@@ -224,8 +226,17 @@ public class Main {
         Match match = new Match(f1,f2,85,100);
         match.run();
 
-         */
         Employee employee1 = new Employee("Nurettin",2000,45,1985);
         employee1.toStringEmpoloyee();
+
+        DiziPratikler diziPratikler = new DiziPratikler();
+        diziPratikler.pratik4();
+
+         */
+
+        DiziOdevler diziOdevler = new DiziOdevler();
+        //diziOdevler.odev1();
+        //diziOdevler.odev2();
+        diziOdevler.odev3();
     }
 }

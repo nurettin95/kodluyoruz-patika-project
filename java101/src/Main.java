@@ -1,5 +1,4 @@
-import Hafta2.PalindromSayi;
-
+import Hafta2.RecursiveFibonacci;
 import java.util.Scanner;
 
 public class Main {
@@ -43,12 +42,12 @@ public class Main {
         Scanner money = new Scanner(System.in);
         tutar = money.nextDouble();
 
-        Hafta1.Kdv kdv = new Hafta1.Kdv();
+        Kdv kdv = new Kdv();
         System.out.println("Kdvsiz tutar : " + tutar);
-        System.out.println("Hafta1.Kdv değeri : " + kdv.KdvDegeri(tutar));
+        System.out.println("Kdv değeri : " + kdv.KdvDegeri(tutar));
         System.out.println("Kdvli toplam tutar : " + kdv.KdvliTutar(tutar));
 
-        Hafta1.UcgenHipotenus ucgenHipotenus = new Hafta1.UcgenHipotenus();
+        UcgenHipotenus ucgenHipotenus = new UcgenHipotenus();
         int aKenari, bKenari;
         double c;
         Scanner ucgen = new Scanner(System.in);
@@ -65,14 +64,14 @@ public class Main {
         System.out.println("Mesafeyi KM cinsinden giriniz: ");
         km = kmInput.nextInt();
 
-        Hafta1.Taksimetre taksimetre = new Hafta1.Taksimetre();
+        Taksimetre taksimetre = new Taksimetre();
         System.out.println("Toplam tutar: " + taksimetre.kmHesapla(km));
 
         Scanner yaricapInput = new Scanner(System.in);
         System.out.println("Yarıçapı giriniz: ");
         int yaricap = yaricapInput.nextInt();
 
-        Hafta1.DaireAlanVeCevre daireAlanVeCevre = new Hafta1.DaireAlanVeCevre();
+        DaireAlanVeCevre daireAlanVeCevre = new DaireAlanVeCevre();
         System.out.println("Dairenin alanı: " + daireAlanVeCevre.DaireAlanHesapla(yaricap));
         System.out.println("Dairen çevresi: " + daireAlanVeCevre.DaireCevreHesapla(yaricap));
 
@@ -82,7 +81,7 @@ public class Main {
         System.out.println("Boyunuzu giriniz: ");
         double boy = input.nextDouble();
 
-        Hafta1.VucutKitleEndeksi vucutKitleEndeksi = new Hafta1.VucutKitleEndeksi();
+        VucutKitleEndeksi vucutKitleEndeksi = new VucutKitleEndeksi();
         System.out.println("Vücut Kitle Endesiniz: " + vucutKitleEndeksi.kitleEndeksiHesapla(kilo,boy));
 
         System.out.println("Armut kaç kilo: " );
@@ -96,7 +95,7 @@ public class Main {
         System.out.println("Patlıcan kaç kilo: " );
         int patlicanKilo = input.nextInt();
 
-        Hafta1.ManavKasaProgram manavKasaProgram = new Hafta1.ManavKasaProgram();
+        ManavKasaProgram manavKasaProgram = new ManavKasaProgram();
         System.out.println("Toplam tutar: " + manavKasaProgram.ToplamHesapla(armutKilo,elmaKilo,domatesKilo,muzKilo,patlicanKilo));
 
 
@@ -112,7 +111,7 @@ public class Main {
         System.out.println("Seçiminiz : ");
         select = input.nextInt();
 
-        Hafta1.HesapMakinesi hesapMakinesi = new Hafta1.HesapMakinesi();
+        HesapMakinesi hesapMakinesi = new HesapMakinesi();
         System.out.println("Sonuç : " + hesapMakinesi.Hesapla(n1, n2, select));
 
         String userName, password;
@@ -123,71 +122,75 @@ public class Main {
         System.out.println("Şifreniz: ");
         password = input.nextLine();
 
-        Hafta1.KullaniciGirisi kullaniciGirisi = new Hafta1.KullaniciGirisi();
+        KullaniciGirisi kullaniciGirisi = new KullaniciGirisi();
         kullaniciGirisi.SifreKontrol(userName,password);
 
-        Hafta1.SinifGecmeDurumu sinifGecmeDurumu = new Hafta1.SinifGecmeDurumu();
-        sinifGecmeDurumu.Hafta1.SinifGecmeDurumu();
+        SinifGecmeDurumu sinifGecmeDurumu = new SinifGecmeDurumu();
+        sinifGecmeDurumu.SinifGecmeDurumu();
 
-        Hafta1.EtkinlikOnerme etkinlikOnerme = new Hafta1.EtkinlikOnerme();
+        EtkinlikOnerme etkinlikOnerme = new EtkinlikOnerme();
         etkinlikOnerme.EtlinlikOnerme();
 
-        Hafta1.SayiSiralama sayiSiralama = new Hafta1.SayiSiralama();
-        sayiSiralama.Hafta1.SayiSiralama();
+        SayiSiralama sayiSiralama = new SayiSiralama();
+        sayiSiralama.SayiSiralama();
 
-        Hafta1.BurcBulma burcBulma = new Hafta1.BurcBulma();
-        burcBulma.Hafta1.BurcBulma();
+        BurcBulma burcBulma = new BurcBulma();
+        burcBulma.BurcBulma();
 
-        Hafta1.UcakBiletiFiyatHesaplama ucakBiletiFiyatHesaplama = new Hafta1.UcakBiletiFiyatHesaplama();
+        UcakBiletiFiyatHesaplama ucakBiletiFiyatHesaplama = new UcakBiletiFiyatHesaplama();
         ucakBiletiFiyatHesaplama.ucakBiletiFiyatHesaplama();
 
-        Hafta1.CinZodyagi cinZodyagi = new Hafta1.CinZodyagi();
-        cinZodyagi.Hafta1.CinZodyagi();
+        CinZodyagi cinZodyagi = new CinZodyagi();
+        cinZodyagi.CinZodyagi();
 
-        Hafta1.ArtikYil artikYil = new Hafta1.ArtikYil();
-        artikYil.Hafta1.ArtikYil();
+        ArtikYil artikYil = new ArtikYil();
+        artikYil.ArtikYil();
 
-        Hafta1.AverageCalculator averageCalculator = new Hafta1.AverageCalculator();
-        averageCalculator.Hafta1.AverageCalculator();
+        AverageCalculator averageCalculator = new AverageCalculator();
+        averageCalculator.AverageCalculator();
 
-        Hafta1.SumCalculator sumCalculator = new Hafta1.SumCalculator();
-        sumCalculator.Hafta1.SumCalculator();
+        SumCalculator sumCalculator = new SumCalculator();
+        sumCalculator.SumCalculator();
 
-        Hafta1.PowerCalculator powerCalculator = new Hafta1.PowerCalculator();
-        powerCalculator.Hafta1.PowerCalculator();
+        PowerCalculator powerCalculator = new PowerCalculator();
+        powerCalculator.PowerCalculator();
 
-        Hafta1.CombinationCalculator combinationCalculator = new Hafta1.CombinationCalculator();
-        combinationCalculator.Hafta1.CombinationCalculator();
+        CombinationCalculator combinationCalculator = new CombinationCalculator();
+        combinationCalculator.CombinationCalculator();
 
-        Hafta1.UsluSayilar usluSayilar = new Hafta1.UsluSayilar();
+        UsluSayilar usluSayilar = new UsluSayilar();
         usluSayilar.usluSayilar();
 
-        Hafta1.DigitSumCalculator digitSumCalculator = new Hafta1.DigitSumCalculator();
-        digitSumCalculator.Hafta1.DigitSumCalculator();
+        DigitSumCalculator digitSumCalculator = new DigitSumCalculator();
+        digitSumCalculator.DigitSumCalculator();
 
-        Hafta1.HarmonicSeries harmonicSeries = new Hafta1.HarmonicSeries();
-        harmonicSeries.Hafta1.HarmonicSeries();
+        HarmonicSeries harmonicSeries = new HarmonicSeries();
+        harmonicSeries..HarmonicSeries();
 
-        Hafta1.DiamondPattern diamondPattern = new Hafta1.DiamondPattern();
-        diamondPattern.Hafta1.DiamondPattern();
+        DiamondPattern diamondPattern = new DiamondPattern();
+        diamondPattern.DiamondPattern();
 
-        Hafta1.EbobEkok ebobEkok = new Hafta1.EbobEkok();
+        EbobEkok ebobEkok = new EbobEkok();
         ebobEkok.ebobEkok();
 
-        Hafta1.EnBuyukEnKucukSayiBulma enBuyukEnKucukSayiBulma = new Hafta1.EnBuyukEnKucukSayiBulma();
-        enBuyukEnKucukSayiBulma.Hafta1.EnBuyukEnKucukSayiBulma();
+        EnBuyukEnKucukSayiBulma enBuyukEnKucukSayiBulma = new EnBuyukEnKucukSayiBulma();
+        enBuyukEnKucukSayiBulma.EnBuyukEnKucukSayiBulma();
 
-        Hafta1.MukemmelSayi mukemmelSayi = new Hafta1.MukemmelSayi();
-        mukemmelSayi.Hafta1.MukemmelSayi();
+        MukemmelSayi mukemmelSayi = new MukemmelSayi();
+        mukemmelSayi.MukemmelSayi();
 
-        Hafta1.TersUcgen tersUcgen = new Hafta1.TersUcgen();
+        TersUcgen tersUcgen = new TersUcgen();
         tersUcgen.tersUcgen();
 
         Fibonacci fibonacci = new Fibonacci();
         fibonacci.Fibonacci();
-         */
+
         PalindromSayi palindromSayi = new PalindromSayi();
         palindromSayi.isPalindrom(101);
+
+         */
+        RecursiveFibonacci recursiveFibonacci = new RecursiveFibonacci();
+        recursiveFibonacci.fib(5);
 
     }
 }

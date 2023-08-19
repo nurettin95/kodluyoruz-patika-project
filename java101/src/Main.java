@@ -3,6 +3,7 @@ import Hafta2.DiziPratikler;
 import Hafta2.Employee.Employee;
 import Hafta2.Fighter.Fighter;
 import Hafta2.Fighter.Match;
+import Hafta2.MineSweeper.MineSweeper;
 import Hafta2.OgrenciNotSistemi.Course;
 import Hafta2.OgrenciNotSistemi.Student;
 import Hafta2.OgrenciNotSistemi.Teacher;
@@ -271,6 +272,9 @@ public class Main {
 
         PalindromikKelimeler palindromikKelimeler = new PalindromikKelimeler();
         palindromikKelimeler.PalindromikKelimeler();
+
+        MineSweeper mineSweeper = new MineSweeper(3,3);
+        mineSweeper.run();
 
          */
 

@@ -6,7 +6,10 @@ import Hafta2.Fighter.Match;
 import Hafta2.OgrenciNotSistemi.Course;
 import Hafta2.OgrenciNotSistemi.Student;
 import Hafta2.OgrenciNotSistemi.Teacher;
+import Hafta2.PalindromikKelimeler;
+import Hafta2.SayiTahminOyunu;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -232,11 +235,45 @@ public class Main {
         DiziPratikler diziPratikler = new DiziPratikler();
         diziPratikler.pratik4();
 
-         */
-
         DiziOdevler diziOdevler = new DiziOdevler();
         //diziOdevler.odev1();
         //diziOdevler.odev2();
         diziOdevler.odev3();
+
+        String str = "patika";
+        char a = 98;
+        System.out.println(str.charAt(1));
+        System.out.println(a);
+        System.out.println(str.codePointAt(1));
+        System.out.println(str.codePointBefore(1));
+        String patika = "paTİka";
+        System.out.println(str.compareTo(patika)); //eşitse 0 değilse bir sayı. İki dizeyi sözlükbilimsel olarak karşılaştırır.
+        System.out.println(str.compareToIgnoreCase(patika)); //büyük / küçük harf farklılıklarını göz ardı ederek karşılaştırır.
+        System.out.println(str.concat(".dev")); //patika.dev --başka bir string'in sonuna bir karakter ekler.
+        System.out.println(str.contains("p")); // bir dizenin bir dizi karakter içerip içermediğini kontrol eder.
+        System.out.println(str.endsWith("a")); // bu a ile bitmiş mi diye bakıyor.
+        System.out.println(str.equals("patika")); // iki dizgiyi karşılaştırır eşitse true
+        System.out.println(str.indexOf("a")); // indexini buluyor. buldugu ilk değeri döndürüyor.
+        System.out.println(str.length()); // boyutu
+        System.out.println(str.replace("a","b"));// a'yı b değiştirir.
+        System.out.println(str.replaceFirst("a","b")); // ilk budugunu değiştiriyor sadece.
+        String[] sp = str.split("a");
+        System.out.println(Arrays.toString(sp)); //bir dizeyi bir alt dizeye böler.
+        System.out.println(str.startsWith("p")); // belirtilen karakterlerle başlayıp başlamadığını kontrol eder.
+        System.out.println(str.substring(2)); //2. indisten sonraki alır.
+        System.out.println(str.substring(2,5)); // 2. dahil 5 değil
+        System.out.println(str.toLowerCase()); // tüm içeriğini küçültür.
+        System.out.println(str.toUpperCase()); // tüm içeriğini büyütür.
+        System.out.println(str.trim()); // bir dizenin her iki ucundaki boşluğu kaldırır.
+
+        SayiTahminOyunu sayiTahminOyunu = new SayiTahminOyunu();
+        sayiTahminOyunu.SayiTahminOyunu();
+
+        PalindromikKelimeler palindromikKelimeler = new PalindromikKelimeler();
+        palindromikKelimeler.PalindromikKelimeler();
+
+         */
+
+
     }
 }

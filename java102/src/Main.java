@@ -1,6 +1,4 @@
-import Week4.Calculate;
-import Week4.Course;
-import Week4.User;
+import Week4.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,8 +27,6 @@ public class Main {
 
         Calculate.calcAvarage(dersler);
 
-         */
-
         System.out.println("1. Program başladı.");
 
         User u1 = new User("Nurettin Görsoy");
@@ -39,6 +35,22 @@ public class Main {
 
         System.out.println("Counter Son Değer : " + User.counter);
         System.out.println("Program Bitti");
+        */
+
+        Student st1 = new Student("Mustafa","Çetindağ","123","AA",85);
+        Student st2 = new Student("Patika","Dev","2321","BB",110);
+        Student st3 = new Student("Kodluyoruz", "Java102","12312","CC",85);
+
+        Instructor teacher = new Instructor("Mahmut", "Çetindağ","CENG");
+
+        //Kalıtım => is a
+        //Composition, Aggretation
+        //Course2 has a Instructor (Sınıfın bir öğretmeni vardır.)
+        Course2 mat = new Course2("MAT101","MAT", teacher);
+        System.out.println(mat.getInstructor().getName());
+
+        //Student[] stu = {st1, st2, st3};
+        //System.out.println("ortalama: " + mat.calcAvarage(stu));
 
     }
 }

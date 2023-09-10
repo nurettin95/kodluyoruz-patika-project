@@ -35,7 +35,7 @@ public class Main {
 
         System.out.println("Counter Son Değer : " + User.counter);
         System.out.println("Program Bitti");
-        */
+
 
         Student st1 = new Student("Mustafa","Çetindağ","123","AA",85);
         Student st2 = new Student("Patika","Dev","2321","BB",110);
@@ -51,6 +51,8 @@ public class Main {
 
         //Student[] stu = {st1, st2, st3};
         //System.out.println("ortalama: " + mat.calcAvarage(stu));
+
+         */
 
     }
 }
